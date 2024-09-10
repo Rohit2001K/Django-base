@@ -1,0 +1,33 @@
+body{
+    background-color: lightskyblue;
+}
+
+.data{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1vw;
+    padding: 2vw; /* Space around the container */
+    justify-content: left; /* Center the items horizontally */
+    
+}
+
+
+.user-block{
+
+    border-radius: 8px;
+    padding: 1vw;
+    width: 10vw; /* Set a fixed width for blocks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.user-block:hover{
+    background-color: gray;
+}
+
+.userpic{
+    height: 10vh;
+    width: 15vh;
+}
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <h1>Create an account </h1>
+    <form method="post">
+        {% csrf_token%}
+        {{form.as_p}}<br>
+        <input type="submit" value="SUBMIT">
+    </form>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>

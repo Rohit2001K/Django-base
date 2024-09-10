@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <p>THIS IS FRST PAGE</p>
+    <h1>THis is sub webpage</h1>
+    {%for i in user_info%}
+        {{i.name}}<br>
+        {{i.bio}}<br>
+        {{i.email}}<br>
+        {%for j in i.skills_set.all%}
+           <p>her E is {{j.e_skill}}</p> 
+           <p> her ult is {{j.ult_skill}}</p>
+        {%endfor%}
+    {%endfor%}
+</body>
